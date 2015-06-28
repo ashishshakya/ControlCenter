@@ -2,7 +2,6 @@
 -------------------------------------------------- */
 html {
     position: relative;
-    min-height: 100%;
 }
 
 body {
@@ -12,13 +11,26 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
+.shadow{
+     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
 .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #f5f5f5;
+}
+
+#mainUI {
+}
+
+#sideBar {
+    border-left: solid 3px #CECECE;
 }
 
 .ui-draggable.canBePlaced {

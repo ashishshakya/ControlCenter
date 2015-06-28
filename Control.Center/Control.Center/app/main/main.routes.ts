@@ -22,7 +22,8 @@
                     templateUrl: '../app/main/main.html'
                 },
                 'controlCenter@main': {
-                    template: 'This is the controlCenter'
+                    template: '<control-center></control-center>'
+                    
                 },
                 'appBody@main': {
                     template: 'This is the pap body'

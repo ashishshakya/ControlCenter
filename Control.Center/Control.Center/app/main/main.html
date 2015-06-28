@@ -1,10 +1,15 @@
 ﻿<div class="container-fluid" id="mainUI">
-    <div class="row">
+    <div class="row" >
         <div class="col-lg-2">
-            <div id="sideBar" ui-view="controlCenter"></div>
+            <div id="sideBar" ui-view="controlCenter" class="affix"></div>
         </div>
         <div class="col-lg-10">
             <div id="appBody" ui-view="appBody"></div>
+            <footer class="footer">
+                <div class="container">
+                    <p class="text-muted text-center" style="vertical-align:middle">Welcome to your app.</p>
+                </div>
+            </footer>
         </div>
     </div>
 </div>

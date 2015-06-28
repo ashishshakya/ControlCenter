@@ -7,7 +7,7 @@
         static instance(): ng.IDirective {
             return new ControlCenterDirective();
         }
-
+        replace = true;
         restrict = 'AE';
         templateUrl = '../app/layout/controlCenter/controlCenter.html';
 
