@@ -268,7 +268,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="img\loader.gif" />
     <Content Include="img\logo-mobile.png" />
     <Content Include="img\logo2.png" />
     <Content Include="img\texture.jpg" />
