@@ -1168,6 +1168,7 @@
     <Content Include="Scripts\version.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
