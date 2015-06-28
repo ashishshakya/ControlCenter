@@ -3,21 +3,6 @@
 
     var app = angular.module('app');
 
-    app.config(config);
-
-    config.$inject = [
-        '$stateProvider',
-        '$urlRouterProvider'
-    ];
-
-    function config(
-        $stateProvider: angular.ui.IStateProvider,
-        $urlRouterProvider: angular.ui.IUrlRouterProvider) {
-
-        $urlRouterProvider.otherwise('/dashboard');
-
-    }
-
     app.config(configureToolTip);
     configureToolTip.$inject = ['$tooltipProvider'];
 

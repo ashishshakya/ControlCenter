@@ -2,6 +2,7 @@
     'use strict';
 
     class PageHeaderDirective implements ng.IDirective {
+        static tagName: string = 'appHeader';
         static instance(): ng.IDirective {
             return new PageHeaderDirective();
         }
@@ -17,6 +18,6 @@
 
     angular
         .module('app.layout')
-        .directive('appHeader', PageHeaderDirective.instance);
+        .directive(PageHeaderDirective.tagName, PageHeaderDirective.instance);
 
 }

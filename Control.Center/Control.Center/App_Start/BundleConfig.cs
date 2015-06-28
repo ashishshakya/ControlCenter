@@ -29,7 +29,7 @@ namespace Control.Center
 
         private static void AddAppBundles(BundleCollection bundles)
         {
-            bundles.Add(new StyleBundle("~/app/css").Include("~/Content/Site.css"));
+            bundles.Add(new StyleBundle("~/app/css").Include("~/Content/style.css"));
 
             var appSelected = "app";
 
@@ -51,7 +51,7 @@ namespace Control.Center
                 .Include("~/Content/bootstrap.css")
                 .Include("~/Content/angular-ui.css")
                 .Include("~/Content/angular-gridster.min.css")
-                .Include("~/Content/animate.css")
+                .Include("~/Content/animation.css")
                 .Include("~/Content/angular-chart.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
