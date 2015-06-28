@@ -2801,67 +2801,43 @@ html {
   -o-transition: all 1s;
   transition: all 1s;
 }
-#navbarMain {
+#mainUI {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+#sideBar {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   z-index: 10;
 }
-#contentMain {
+#appBody {
   position: absolute;
   width: 100%;
+  height: 100%;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   z-index: 10;
-}
-#masterUI.ng-enter #navbarMain {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-#masterUI.ng-enter #contentMain {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 #masterUI.ng-enter .login-box {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
 }
-#masterUI.ng-leave #navbarMain {
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
-}
-#masterUI.ng-leave #contentMain {
-  -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown;
-}
 #masterUI.ng-leave .login-box {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
 }
-@media (max-width: 767px) {
-  .navbar-brand {
-    padding-top: 20px;
-    padding-left: 15px;
-  }
-  .dropdown-header {
-    color: #FFF;
-    font-style: italic;
-    font-size: smaller;
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #FFF;
-  }
-  #quick-access-icons-list {
-    list-style-type: none;
-    text-align: center;
-    width: 100%;
-  }
-  #quick-access-icons-list > li {
-    float: left;
-    width: 33%;
-  }
+#mainUI.ng-enter #sideBar {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 }
-/*# sourceMappingURL=style.css.map */
+#mainUI.ng-enter #appBody {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+/*# sourceMappingURL=transitions.css.map */

@@ -29,7 +29,8 @@ namespace Control.Center
 
         private static void AddAppBundles(BundleCollection bundles)
         {
-            bundles.Add(new StyleBundle("~/app/css").Include("~/Content/style.css"));
+            bundles.Add(new StyleBundle("~/app/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/animation").IncludeDirectory("~/animation/","*.css"));
 
             var appSelected = "app";
 

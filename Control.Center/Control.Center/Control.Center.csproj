@@ -240,11 +240,11 @@
     <Content Include="Content\select2.png" />
     <Content Include="Content\select2x2.png" />
     <Content Include="Content\spinner.gif" />
-    <Content Include="animation\style.css">
-      <DependentUpon>style.less</DependentUpon>
+    <Content Include="animation\transitions.css">
+      <DependentUpon>transitions.less</DependentUpon>
     </Content>
-    <Content Include="animation\style.min.css">
-      <DependentUpon>style.css</DependentUpon>
+    <Content Include="animation\transitions.min.css">
+      <DependentUpon>transitions.css</DependentUpon>
     </Content>
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -372,9 +372,9 @@
     <Content Include="animation\animation.css.map">
       <DependentUpon>animation.css</DependentUpon>
     </Content>
-    <Content Include="animation\style.less" />
-    <Content Include="animation\style.css.map">
-      <DependentUpon>style.css</DependentUpon>
+    <Content Include="animation\transitions.less" />
+    <Content Include="animation\transitions.css.map">
+      <DependentUpon>transitions.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\flot\excanvas.js" />

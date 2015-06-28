@@ -67,82 +67,40 @@ html {
     .transition(all 1s); //if using child trasition animations, they should all be under this time value, keyframe animations are differen
 }
 
+#mainUI {
+    .transition(all 1s);
+}
 
-
-#navbarMain {
+#sideBar {
     .animated;
     z-index: 10;
 }
 
-
-
-
-#contentMain {
+#appBody {
     position: absolute;
     width: 100%;
+    height: 100%;
     .animated;
     z-index: 10;
 }
 
-
-
-
 #masterUI.ng-enter {
-    #navbarMain {
-        .tempAbs;
-        .fadeInDown;
-    }
-
-    #contentMain {
-        .fadeInUp;
-    }
-
     .login-box {
         .fadeInUp;
     }
 }
 
 #masterUI.ng-leave {
-    #navbarMain {
-        .tempAbs;
-        .fadeOutUp;
-    }
-
-    #contentMain {
-        .fadeOutDown;
-    }
-
     .login-box {
         .fadeOutDown;
     }
 }
 
-
-
-@media (max-width:767px) {
-    .navbar-brand {
-        padding-top: 20px;
-        padding-left: 15px;
+#mainUI.ng-enter{
+    #sideBar{
+        .fadeInLeft;   
     }
-
-    .dropdown-header {
-        color: #FFF;
-        font-style: italic;
-        font-size: smaller;
+    #appBody{
+        .fadeInRight;   
     }
-
-    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #FFF;
-    }
-
-    #quick-access-icons-list {
-        list-style-type: none;
-        text-align: center;
-        width: 100%;
-    }
-
-        #quick-access-icons-list > li {
-            float: left;
-            width: 33%;
-        }
 }
