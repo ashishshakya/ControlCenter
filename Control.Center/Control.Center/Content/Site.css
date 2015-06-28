@@ -1,17 +1,213 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    margin-top: 83px;
+    background-color: rgb(238, 238, 238);
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.ui-draggable.canBePlaced {
+    cursor: move;
+}
+
+.gridster.editMode .gridster-item {
+    cursor: move;
+}
+
+.panel-widget {
+    border: none;
+     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+.panel-widget > .panel-heading {
+    color: #FFF;
+    background-color: #7AB2C4;
+}
+
+.panel-widget .panel-body {
+    height: 100%;   
+}
+
+.appContainer.container {
+    padding-top: 85px;
+    margin-top: 20px;
+}
+
+.navbar-header {
+    height: 66px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-inverse {
+    background: none repeat scroll 0 0 #4E92A9;
+    color: #FFF;
+}
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #FFF;
+    }
+
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        color: #ffffff;
+        background-color: #4E92A9;
+    }
+
+.navbar-main {
+    border-bottom: 17px solid #7AB2C4;
+    height: 83px;
+}
+
+#navbar-collapse-section {
+    padding-top: 10px;
+    color: #FFF;
+    background-color: #4E92A9;
+}
+
+.dropdown-menu {
+    top: 110%;
+}
+
+.dropdown-header {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.btn-clipboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #767676;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 4px 0 4px;
+}
+
+    .btn-clipboard:hover {
+        color: #fff;
+        background-color: #563d7c;
+        border-color: #563d7c;
+    }
+
+.gridster.editMode {
+    border: dashed 1px #CECECE;
+}
+
+.tooltip-inner {
+    color: #fff;
+    background-color: #3f8198;
+    border-color: #FFF;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #3f8198;
+}
+
+.tooltip.top-left .tooltip-arrow {
+    border-top-color: #3f8198;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    border-top-color: #3f8198;
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #3f8198;
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #3f8198;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #3f8198;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+    border-bottom-color: #3f8198;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    border-bottom-color: #3f8198;
+}
+
+#customWidgetList {
+    padding: 10px;
+    background-color: #FBFBFB;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    border-left: solid 4px #EEE;
+}
+
+#customWidgetList .col-lg-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+   
+#customWidgetList ul.sidebar-menu {
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#customWidgetList .sidebar-menu .submenu li{
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#customWidgetList a {
+    text-decoration: none;
+}
+
+@media (max-width:767px) {
+    .navbar-brand {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+    .dropdown-header {
+        color: #FFF;
+        font-style: italic;
+        font-size: smaller;
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #FFF;
+    }
+
+    #quick-access-icons-list {
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+    }
+
+        #quick-access-icons-list > li {
+            float: left;
+            width: 33%;
+        }
 }
