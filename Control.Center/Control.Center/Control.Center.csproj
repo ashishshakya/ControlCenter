@@ -226,10 +226,10 @@
     <Content Include="Content\angular-ui.min.css" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\animate.min.css" />
-    <Content Include="Content\animation.css">
+    <Content Include="animation\animation.css">
       <DependentUpon>animation.less</DependentUpon>
     </Content>
-    <Content Include="Content\animation.min.css">
+    <Content Include="animation\animation.min.css">
       <DependentUpon>animation.css</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
@@ -240,10 +240,10 @@
     <Content Include="Content\select2.png" />
     <Content Include="Content\select2x2.png" />
     <Content Include="Content\spinner.gif" />
-    <Content Include="Content\style.css">
+    <Content Include="animation\style.css">
       <DependentUpon>style.less</DependentUpon>
     </Content>
-    <Content Include="Content\style.min.css">
+    <Content Include="animation\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="Content\themes\base\accordion.css" />
@@ -366,15 +366,14 @@
     <Content Include="Content\angular-chart.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\transitions.less" />
     <Content Include="Scripts\angular-chart.min.js.map" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="Content\animation.less" />
-    <Content Include="Content\animation.css.map">
+    <Content Include="animation\animation.less" />
+    <Content Include="animation\animation.css.map">
       <DependentUpon>animation.css</DependentUpon>
     </Content>
-    <Content Include="Content\style.less" />
-    <Content Include="Content\style.css.map">
+    <Content Include="animation\style.less" />
+    <Content Include="animation\style.css.map">
       <DependentUpon>style.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

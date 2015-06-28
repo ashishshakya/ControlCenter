@@ -20,6 +20,12 @@
                 'master': {
                     controller: 'app.main.controller',
                     templateUrl: '../app/main/main.html'
+                },
+                'controlCenter@main': {
+                    template: 'This is the controlCenter'
+                },
+                'appBody@main': {
+                    template: 'This is the pap body'
                 }
             }
         });
